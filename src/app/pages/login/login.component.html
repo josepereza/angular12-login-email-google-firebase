@@ -2,7 +2,9 @@
 <button (click)="logout()">LogOut</button>
 
 </div>
-
+<div *ngIf="mostraralerta" class="alert alert-danger" role="alert">
+  Error en el email o password!
+</div>
 
    <ng-template #showLogin>
     <div class="row mb-3">
